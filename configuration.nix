@@ -152,7 +152,7 @@
    environment.systemPackages = with pkgs; [
      obsidian
   ];
-}
+};
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
