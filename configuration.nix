@@ -143,7 +143,6 @@
      slurp
      udiskie
      fastfetch
-     joplin-desktop
      obsidian
    ];
 
