@@ -2,7 +2,7 @@
 
 animation_duration_ms 250
 
-blur disable
+blur enable
 # blur_xray enables wallpaper blurring without blurring windows below
 blur_xray enable
 blur_passes 1
@@ -254,5 +254,6 @@ exec udiskie &
 # Polkit
 exec /nix/store/*-polkit-gnome-*/libexec/polkit-gnome-authentication-agent-1
 include /etc/sway/config.d/*
+
 
 include ~/.config/sway/noctalia
