@@ -111,6 +111,7 @@
      enable = true;
      package = pkgs.swayfx;
      wrapperFeatures.gtk = true;
+     extraPackages = [];
    };
 
    programs.nh = {
