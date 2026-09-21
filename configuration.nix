@@ -144,6 +144,9 @@
      udiskie
      fastfetch
      obsidian
+     helix
+     neovim
+     emacs
    ];
 
   nixpkgs.config.allowUnfree = true;
