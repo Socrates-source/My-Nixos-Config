@@ -67,7 +67,7 @@
 
    services.mpd = {
      enable = true;
-     musicDirectory = "home/socrates/Music"
+     musicDirectory = "home/socrates/Music";
      extraConfig = ''
         audio_output {
           type "pipewire"
