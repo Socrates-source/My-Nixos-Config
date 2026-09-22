@@ -65,6 +65,17 @@
 
    services.upower.enable = true;
 
+   services.mpd = {
+     enable = true;
+     musicDirectory = "home/socrates/Music"
+     extraConfig = ''
+        audio_output {
+          type "pipewire"
+          name "Pipewire"
+      }
+    '';
+   };
+
    services.power-profiles-daemon.enable = true;
 
    security.polkit.enable = true;
@@ -125,6 +136,11 @@
      enable = true;
   };
 
+  programs.appimage = {
+     enable = true;
+     binfmt = true;
+  };
+
    xdg.portal = {
      enable = true;
      wlr.enable = true;
@@ -139,7 +155,7 @@
      vlc
      nautilus
      noctalia
-     htop
+     btop
      apple-cursor
      pavucontrol
      polkit_gnome
@@ -148,11 +164,10 @@
      udiskie
      fastfetch
      helix
-     fuzzel
-     waybar
-     mako
-     wl-clipboard
-     swaybg
+     rmpc
+     yt-dlp
+     cava
+     tty-clock
    ];
 
   nixpkgs.config.allowUnfree = true;
