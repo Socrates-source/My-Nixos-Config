@@ -67,16 +67,16 @@
 
    services.mpd = {
      enable = true;
-     musicDirectory = "home/socrates/Music";
-   };
-
-   services.mpd.settings = {
-      audio_output = [
+     settings = {
+       music_directory = "/home/socrates/Music";
+       audio_output = [
         {
           type = "pipewire";
           name = "PipeWire";
-       }
-     ];
+        }
+      ];
+     };
+     
    };
 
    services.power-profiles-daemon.enable = true;
