@@ -121,6 +121,10 @@
      flake = "/etc/nixos";
    };
 
+  programs.yazi = {
+     enable = true;
+  };
+
    xdg.portal = {
      enable = true;
      wlr.enable = true;
@@ -134,9 +138,8 @@
      fish
      vlc
      nautilus
-     newt
      noctalia
-     btop
+     htop
      apple-cursor
      pavucontrol
      polkit_gnome
@@ -144,8 +147,12 @@
      slurp
      udiskie
      fastfetch
-     obsidian
      helix
+     fuzzel
+     waybar
+     mako
+     wl-clipboard
+     swaybg
    ];
 
   nixpkgs.config.allowUnfree = true;

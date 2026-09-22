@@ -1,5 +1,6 @@
 if status is-interactive
     set -g fish_greeting
+    alias shx='sudo -E hx'
     alias config='sudo -E  hx /etc/nixos/configuration.nix'
     alias rebuild='nh os switch'
     alias update='nh os switch --update'
