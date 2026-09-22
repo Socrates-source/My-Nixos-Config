@@ -65,20 +65,6 @@
 
    services.upower.enable = true;
 
-   services.mpd = {
-     enable = true;
-     settings = {
-       music_directory = "/home/socrates/Music";
-       audio_output = [
-        {
-          type = "pipewire";
-          name = "PipeWire";
-        }
-      ];
-     };
-     
-   };
-
    services.power-profiles-daemon.enable = true;
 
    security.polkit.enable = true;
@@ -167,8 +153,6 @@
      udiskie
      fastfetch
      helix
-     rmpc
-     yt-dlp
      cava
      tty-clock
    ];
