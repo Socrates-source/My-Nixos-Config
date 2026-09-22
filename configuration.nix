@@ -40,7 +40,7 @@
    hardware.bluetooth = {
      enable = true;
      powerOnBoot = true;
-};
+   };
   
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -68,12 +68,15 @@
    services.mpd = {
      enable = true;
      musicDirectory = "home/socrates/Music";
-     extraConfig = ''
-        audio_output {
-          type "pipewire"
-          name "Pipewire"
-      }
-    '';
+   };
+
+   services.mpd.settings = {
+      audio_output = [
+        {
+          type = "pipewire";
+          name = "PipeWire";
+       }
+     ];
    };
 
    services.power-profiles-daemon.enable = true;
