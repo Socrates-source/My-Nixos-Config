@@ -141,7 +141,7 @@
      kitty
      fish
      vlc
-     nautilus
+     dolphin
      noctalia
      btop
      apple-cursor
@@ -151,9 +151,7 @@
      slurp
      udiskie
      fastfetch
-     mako
      helix
-     i3status-rust
      rofi
      cava
      tty-clock
