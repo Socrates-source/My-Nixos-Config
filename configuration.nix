@@ -141,7 +141,7 @@
      kitty
      fish
      vlc
-     dolphin
+     nemo
      noctalia
      btop
      apple-cursor
