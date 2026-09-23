@@ -152,7 +152,6 @@
      udiskie
      fastfetch
      mako
-     zen-browser
      helix
      i3status-rust
      rofi
