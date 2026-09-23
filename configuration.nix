@@ -111,7 +111,10 @@
      enable = true;
      package = pkgs.swayfx;
      wrapperFeatures.gtk = true;
-     extraPackages = [];
+     extraPackages = with pkgs;
+                     [ swaybg
+                       swaylock
+                       swayidle ];
    };
 
    programs.nh = {
@@ -119,10 +122,6 @@
      clean.enable = true;
      clean.extraArgs = "--keep-since 7d --keep 5";
      flake = "/etc/nixos";
-   };
-
-  programs.yazi = {
-     enable = true;
   };
 
   programs.appimage = {
@@ -152,7 +151,11 @@
      slurp
      udiskie
      fastfetch
+     mako
+     zen-browser
      helix
+     i3status-rust
+     rofi
      cava
      tty-clock
    ];
