@@ -117,6 +117,8 @@
                        swayidle ];
    };
 
+   programs.yazi.enable = true;
+
    programs.nh = {
      enable = true;
      clean.enable = true;
@@ -141,7 +143,6 @@
      kitty
      fish
      vlc
-     nemo
      noctalia
      btop
      apple-cursor
