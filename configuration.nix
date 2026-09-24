@@ -111,10 +111,7 @@
      enable = true;
      package = pkgs.swayfx;
      wrapperFeatures.gtk = true;
-     extraPackages = with pkgs;
-                     [ swaybg
-                       swaylock
-                       swayidle ];
+     extraPackages = [ ];
    };
 
    programs.yazi.enable = true;
@@ -138,8 +135,7 @@
    };
   
    environment.systemPackages = with pkgs; [
-     git    
-     vivaldi
+     git
      kitty
      fish
      vlc
@@ -153,7 +149,6 @@
      udiskie
      fastfetch
      helix
-     rofi
      cava
      tty-clock
    ];
