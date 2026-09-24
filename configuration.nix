@@ -139,7 +139,7 @@
   
    environment.systemPackages = with pkgs; [
      git    
-     firefox
+     vivaldi
      kitty
      fish
      vlc
