@@ -85,17 +85,21 @@
        tree
      ];
    };
-   
+
+   #Virtualiasation
+   virtualisation.docker = {
+   enable = true;
+   };
 
    fonts.packages = with pkgs; [
      jetbrains-mono
      nerd-fonts.symbols-only
    ]; 
 
+   #Fish
    programs.fish.enable = true;
 
-   programs.firefox.enable = true;
-
+   #Uwsm
    programs.uwsm = {
      enable = true;
      waylandCompositors = {
@@ -107,6 +111,7 @@
   };
 };
 
+   #Sway
    programs.sway = {
      enable = true;
      package = pkgs.swayfx;
@@ -114,8 +119,7 @@
      extraPackages = [ ];
    };
 
-   programs.yazi.enable = true;
-
+   #Nh
    programs.nh = {
      enable = true;
      clean.enable = true;
@@ -123,11 +127,13 @@
      flake = "/etc/nixos";
   };
 
+  #Appimage
   programs.appimage = {
      enable = true;
      binfmt = true;
   };
 
+  #Xdg
    xdg.portal = {
      enable = true;
      wlr.enable = true;
@@ -136,6 +142,8 @@
   
    environment.systemPackages = with pkgs; [
      git
+     librewolf
+     nautilus
      kitty
      fish
      vlc
