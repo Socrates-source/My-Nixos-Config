@@ -86,11 +86,6 @@
      ];
    };
 
-   #Virtualiasation
-   virtualisation.docker = {
-   enable = true;
-   };
-
    fonts.packages = with pkgs; [
      jetbrains-mono
      nerd-fonts.symbols-only
