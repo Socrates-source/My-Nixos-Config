@@ -150,6 +150,7 @@
      grim
      slurp
      udiskie
+     xwayland-satellite
      fastfetch
      helix
      tty-clock
