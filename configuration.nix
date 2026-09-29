@@ -152,8 +152,6 @@
      udiskie
      fastfetch
      helix
-     emacs
-     cava
      tty-clock
    ];
 
