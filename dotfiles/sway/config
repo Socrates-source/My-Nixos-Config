@@ -46,7 +46,7 @@ set $up k
 set $right l
 
 set $term kitty
-set $menu rofi -show drun
+#set $menu "spawn:noctalia msg panel-toggle launcher"
 
 # Monitors
 
@@ -97,7 +97,7 @@ set $menu rofi -show drun
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+M exec $menu
+    bindsym $mod+M exec noctalia msg panel-toggle launcher
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -111,7 +111,10 @@ set $menu rofi -show drun
 
     # Exit SwayFX (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit SwayFX? This will end your Wayland session.' -B 'Yes, exit SwayFX' 'swaymsg exit'
-#
+
+    # Overview
+    bindsym $mod+tab exec killall -SIGUSR1 sov
+    
 # Moving around:
 #
     # Move your focus around
@@ -254,7 +257,13 @@ exec udiskie &
 
 # Polkit
 exec /nix/store/*-polkit-gnome-*/libexec/polkit-gnome-authentication-agent-1
-include /etc/sway/config.d/*
 
+#Autotiling
+exec_always autotiling
+
+#Sov
+exec_always sov
+
+include /etc/sway/config.d/*
 
 include ~/.config/sway/noctalia

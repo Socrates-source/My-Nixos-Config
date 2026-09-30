@@ -97,15 +97,9 @@
    #Uwsm
    programs.uwsm = {
      enable = true;
-     waylandCompositors = {
-       sway = {
-         prettyName = "SwayFX";
-         comment = "Simple window-manager on wayland";
-         binPath = "/run/current-system/sw/bin/sway";
-    };
-  };
 };
 
+   #
    #Sway
    programs.sway = {
      enable = true;
@@ -143,6 +137,7 @@
      fish
      vlc
      noctalia
+     rofi
      btop
      apple-cursor
      pavucontrol
@@ -150,7 +145,7 @@
      grim
      slurp
      udiskie
-     xwayland-satellite
+     autotiling
      fastfetch
      helix
      tty-clock
