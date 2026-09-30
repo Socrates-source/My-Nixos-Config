@@ -135,7 +135,7 @@
      nautilus
      kitty
      fish
-     vlc
+     mpv
      noctalia
      rofi
      btop

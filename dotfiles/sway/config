@@ -46,7 +46,7 @@ set $up k
 set $right l
 
 set $term kitty
-#set $menu "spawn:noctalia msg panel-toggle launcher"
+#set $menu 
 
 # Monitors
 
@@ -113,7 +113,7 @@ set $term kitty
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit SwayFX? This will end your Wayland session.' -B 'Yes, exit SwayFX' 'swaymsg exit'
 
     # Overview
-    bindsym $mod+tab exec killall -SIGUSR1 sov
+    bindsym $mod+tab exec rofi -show
     
 # Moving around:
 #
@@ -261,8 +261,6 @@ exec /nix/store/*-polkit-gnome-*/libexec/polkit-gnome-authentication-agent-1
 #Autotiling
 exec_always autotiling
 
-#Sov
-exec_always sov
 
 include /etc/sway/config.d/*
 
