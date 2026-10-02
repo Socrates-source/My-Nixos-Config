@@ -258,8 +258,6 @@ exec udiskie &
 # Polkit
 exec /nix/store/*-polkit-gnome-*/libexec/polkit-gnome-authentication-agent-1
 
-#Autotiling
-exec_always autotiling
 
 
 include /etc/sway/config.d/*
