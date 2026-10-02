@@ -114,7 +114,7 @@
      withUWSM = true;
      xwayland.enable = true;
      portalPackage = pkgs.xdg-desktop-portal-hyprland;
-   }
+   };
 
    #Nh
    programs.nh = {
