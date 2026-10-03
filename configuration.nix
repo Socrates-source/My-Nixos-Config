@@ -99,9 +99,6 @@
      enable = true;
   };
 
-   #Halley
-   programs.halley.enable = true;
-   
    #Sway
    programs.sway = {
      enable = true;
@@ -109,6 +106,9 @@
      wrapperFeatures.gtk = true;
      extraPackages = [ ];
   };
+
+  #Niri
+   programs.niri.enable = true;
 
   #Nh
    programs.nh = {
@@ -140,6 +140,7 @@
      fish
      mpv
      noctalia
+     dms-shell
      rofi
      btop
      apple-cursor
