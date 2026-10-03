@@ -89,7 +89,7 @@
    fonts.packages = with pkgs; [
      jetbrains-mono
      nerd-fonts.symbols-only
-   ]; 
+  ]; 
 
    #Fish
    programs.fish.enable = true;
@@ -97,25 +97,20 @@
    #Uwsm
    programs.uwsm = {
      enable = true;
-};
+  };
 
-   #
+   #Halley
+   programs.halley.enable = true;
+   
    #Sway
    programs.sway = {
      enable = true;
      package = pkgs.swayfx;
      wrapperFeatures.gtk = true;
      extraPackages = [ ];
-   };
+  };
 
-   #Hyprland
-   programs.hyprland = {
-     enable = true;
-     xwayland.enable = true;
-     portalPackage = pkgs.xdg-desktop-portal-hyprland;
-   };
-
-   #Nh
+  #Nh
    programs.nh = {
      enable = true;
      clean.enable = true;
@@ -133,7 +128,8 @@
    xdg.portal = {
      enable = true;
      wlr.enable = true;
-     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+     extraPortals = [ pkgs.xdg-desktop-portal-gtk
+                      pkgs.xdg-desktop-portal-gnome ];
    };
   
    environment.systemPackages = with pkgs; [

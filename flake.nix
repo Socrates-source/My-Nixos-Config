@@ -3,9 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    halley.url = "github:binarylinuxx/halley-flake";
     };
 
-  outputs = { self, nixpkgs, ... }
+  outputs = { self, nixpkgs, halley, ... }
  @inputs: {
        nixosConfigurations = {
             Travelmate = 
@@ -13,6 +14,7 @@
                system = "x86_64-linux";
                modules = [
                   ./configuration.nix
+                  halley.nixosModules.default
         ];
       };
     };      
