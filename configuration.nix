@@ -104,11 +104,9 @@
      enable = true;
      package = pkgs.swayfx;
      wrapperFeatures.gtk = true;
-     extraPackages = [ ];
+     extraPackages = with pkgs; [ swaybg swayidle swaylock  ];
   };
 
-  #Niri
-   programs.niri.enable = true;
 
   #Nh
    programs.nh = {
@@ -140,7 +138,8 @@
      fish
      mpv
      noctalia
-     dms-shell
+     mako
+     waybar
      rofi
      btop
      apple-cursor
@@ -156,6 +155,9 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  #Steam
+  programs.steam.enable = true;
+  
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
