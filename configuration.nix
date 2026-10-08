@@ -7,7 +7,7 @@
 
   boot.loader.limine = {
     enable = true;
-    style = {  wallpapers = [ /boot/limine/wallpapers/wallhaven-l3lx7r.jpg ];
+    style = {  wallpapers = [ ./Walls/wallhaven-l3lx7r.jpg ];
                wallpaperStyle = "centered";
      };
    };
