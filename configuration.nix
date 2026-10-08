@@ -5,7 +5,13 @@
     [ ./hardware-configuration.nix
     ];
 
-  boot.loader.limine.enable = true;
+  boot.loader.limine = {
+    enable = true;
+    style = {  wallpapers = [ /boot/limine/wallpapers/wallhaven-l3lx7r.jpg ];
+               wallpaperStyle = "centered";
+     };
+   };
+
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "Travelmate";
