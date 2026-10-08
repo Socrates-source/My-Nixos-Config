@@ -136,6 +136,7 @@
    environment.systemPackages = with pkgs; [
      git
      librewolf
+     floorp-bin
      nautilus
      kitty
      fish
@@ -159,7 +160,7 @@
   nixpkgs.config.allowUnfree = true;
 
   #Steam
-  programs.steam.enable = true;
+  #programs.steam.enable = true;
   
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
