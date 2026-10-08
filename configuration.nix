@@ -136,7 +136,6 @@
    environment.systemPackages = with pkgs; [
      git
      librewolf
-     floorp-bin
      nautilus
      kitty
      fish
