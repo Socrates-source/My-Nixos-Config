@@ -255,10 +255,11 @@ exec noctalia
 # Udiskie:
 exec udiskie &
 
-# Polkit
+# Polkit:
 exec /nix/store/*-polkit-gnome-*/libexec/polkit-gnome-authentication-agent-1
 
-
+#Wallpaper:
+exec_always swaybg -i ~/Walls/Shinji.png -m fill
 
 include /etc/sway/config.d/*
 

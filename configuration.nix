@@ -154,6 +154,8 @@
      apple-cursor
      pavucontrol
      polkit_gnome
+     kanshi
+     autotiling
      grim
      slurp
      udiskie
