@@ -261,6 +261,11 @@ exec /nix/store/*-polkit-gnome-*/libexec/polkit-gnome-authentication-agent-1
 #Wallpaper:
 exec_always swaybg -i ~/Walls/Shinji.png -m fill
 
+#Kanshi:
+exec_always kanshi
+
+#Autotiling:
+exec_always autotiling
 include /etc/sway/config.d/*
 
 include ~/.config/sway/noctalia
