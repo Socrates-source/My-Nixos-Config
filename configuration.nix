@@ -142,6 +142,7 @@
    environment.systemPackages = with pkgs; [
      git
      librewolf
+     nautilus
      kitty
      fish
      mpv
