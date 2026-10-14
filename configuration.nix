@@ -142,13 +142,10 @@
    environment.systemPackages = with pkgs; [
      git
      librewolf
-     nautilus
      kitty
      fish
      mpv
      noctalia
-     mako
-     waybar
      rofi
      btop
      apple-cursor
